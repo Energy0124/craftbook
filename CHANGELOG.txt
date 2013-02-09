@@ -1,3 +1,411 @@
+3.5.3
+* Fix ContainerDispenser ignoring amount written on sign.
+* Fix an error with Painting Switcher and the Auto Updater.
++ Added SuperPush piston mechanic. It can push air.
+* Fix an error in Playlists sometimes stopping players from being removed.
+* Fixed some MIDIs sounding different with Radio IC's.
+* Fix item dissapearing bug with BetterPistons.
+* Fixed 5 Output IC's.
++ Added missing language nodes for BetterPistons.
+* Made /cb about give release versions name (If using one).
++ Added /cb report command to allow us to solve peoples issues quicker. (Reports config and other info)
+* BetterPiston mechanics allow multiple mechanics on a single piston.
++ Added an AIR option to last line of SuperSticky, allowing it to pull air.
+* Fixed Repeaters not working 100% with BetterPistons.
+* Fixed Repeaters not working 100% with IC's. (Thanks to Silthus)
+
+3.5.2
++ Added BetterPistons mechanic
+  - Bounce Pistons, bounce blocks or entities with set velocity
+  - SuperSticky Pistons, allow a sticky piston to pull back further than 1 block.
+  - Crush Pistons, allow pistons to break blocks.
++ Chest Content Detector IC.
++ Added a custom list of blocks snow can replace to the config.
++ Added better corrupt sign handling, although bukkit has fixed the type of corruption this detected.
+* Fixed gates allowing transmutation of blocks.
++ Added a few extra messages to teleporters.
+* Bug fixes for realistic snow. No more StackOverflowExceptions.
+* Fixed a potion inducer error.
+* Fix Flamethrower IC.
+* Commented config properly.
+* Fixed a few perm bugs with commands.
+* Fix custom drop errors about invalid items.
+* Fixed an AI mechanic bug.
+* Fixed Combine Harvester & Nether Wart.
+* Fixed a pipe dupe bug.
+
+3.5.1
+* Fixed a few vehicle bugs.
+* Renamed Radio IC to JukeBox IC.
++ Added a goto line in Playlists.
++ Added Radio Station & Radio Player IC.
+* Made error reporting nicer.
+* Fixed a few IC verifiction bugs.
++ Added an option to change IC max radius.
++ Added a demultiplexer.
+* Fixed painting switch sometimes working out of range.
+* Fix possible betterphysics dupe bug.
+* Allowed last line of cart dispenser to be collect or dispense, making it only do 1 of the actions.
++ Added Container Stacker IC. Stacks contents of above container.
+* Fixed a cart massacre bug.
+* Fix Plugin Metrics.
+* Fixed the /cb reload command.
++ Added an update notifier/auto updater. (Configurable)
+* Fixed all recipes with auto crafter.
++ Add an option to change ST IC ticks. (Unrecommended, as it is perfect to redstone atm).
+* Optimizations to BetterPhysics.
+* Made the entity spawning IC's check if the entity is valid to spawn.
+* Made the fire barrage IC shoot more normally.
++ Made last line of the chest dispenser IC allow you to make it spawn only the item you want it to drop.
++ Added XPSpawner IC.
+* Made Enhanced Zombie AI not have a set range, but have better chances of not being detected the further away you are.
+
+3.5
+* Fixed an error with realistic snow.
+* Fixed CartTeleporter and CartLift breaking due to a bukkit change.
++ Added different offset types. (Relative, Difference and Absolute)
++ Added Radio IC and Playlists.
++ Added official support for pressure plates as intersections.
+* Fixed Auto Crafter with a lot of recipes.
+* Fix many IC bugs.
+* Restrict PaintingSwitcher to reach distance.
+* Fixed an ItemDispenser error.
++ Added CraftBook about command listing authors and version.
+* Fixed Planter not planting carrots.
++ Added support for rectangular radius on IC's.
++ Added BetterPhysics mechanic. Currently only has falling ladders.
++ Added the ability for storage carts to place rails.
+
+3.5 Beta 4 (Probably last 3.5 Beta, it looks very stable)
+* Fix error due to improper IC config.
++ Added /ic fireworks command to list firework scripts.
+* Fixed some IC's being unrestricted when they should've been restricted.
+* Fix Custom Crafting & Improved Cauldrons recipes.
+* Fixed Crash bug with Hidden Switch.
+* Fixed Auto Crafter not crafting the correct amount of an item.
+* Made Chest Stocker use block above IC Block by default. (Also offset is based of ic block now).
+* Fixed Creature Spawner data overflowing into amount.
+* Fixed radius verification on farm IC's.
+* Fixed Chairs allowing people to glitch through blocks.
+* Fixed all 3I3O IC's. (Adders, Subtractors, Dispatchers).
++ Added a lot more harvestable blocks to Combine Harvester.
++ Added Animal Harvester IC.
+* Made Entity Sensor less buggy.
+
+3.5 Beta 3
+* Fix errors related to corrupt signs.
+* Renamed a few configuration nodes to make more sense.
+* Fixed a NPE with areas.
++ Added an option to auto shorten area namespaces.
+* Fixed SetBridge offset
++ Added error handling for missing fireworks
++ Added an option to make snow slow you down when piled up.
++ Made piled snow drop the equivalent amount of snowballs.
+* Made MessageSender broadcast to all players if the line was empty.
+* Added a workaround for IC's outputs not triggering IC's.
+* Fixed many incorrect config nodes.
++ Added an option to disable redstone on (and therefore turning off) chunk anchors.
++ Added an option to make chunk anchors check for chunk anchors already in the chunk.
++ Added an option to have a ! on the last line of a player sensor to invert the IC.
++ Added an option to have a ! on the offset of a player sensor to use absolute coordinates.
++ Manually added correct drops to Combine Harvester.
+* Fixed /cb reload being usable by all
+* Fixed Auto crafter with 3x2 recipes.
+
+3.5 Beta 2
+* Stop unneeded folders generating.
++ Added better detection of corrupt chunks/blocks. It now tells you which chunk is corrupt if it finds one.
+* Fixed CartReverser being inversed.
++ Added furnace support to pipes.
+* Minor changes to IC Permissions. (Shouldn't effect you in any way)
++ Added option to modify powered rail power.
++ Added option for storage carts to pickup items they run into.
+* Made snow mechanics off by default.
+* Made Spigot IC Restricted temporarily, it can be dangerous.
+* Fixed a lot of bugs with minecart remove entities on collision, it is now more stable and won't stop you when hitting entities.
+* Fixed Custom Dispensing, Snow, Painting Switcher, Chairs, AI Mechanics, Custom Drops
++ Added an option to only read bookshelves while sneaking, and if false; it is the opposite.
+
+3.5 Beta 1
+* MERGED ALL 4 JARS INTO 1. DUE TO THIS CONFIGS NEED TO BE REGENERATED, AND MIDIS + TOGGLE AREAS NEED TO BE MOVED
++ Added a Tune IC
+* Fixed CartReverser for 1.4.5+, and gave station more pushing power
+* Auto Crafter improvements
+* Few tweaks to liquid flooder.
++ Added a programmable firework display IC.
+* Large performance enhancements.
+* Sped up chunk enumeration on startup.
++ Added a single stack option to pipes.
+* Fix snow mechanic not obeying WorldGuard regions.
+* If a WorldEdit selection is empty it now gives a message instead of erroring when trying to save an area.
+* Fixed getting inside of storage carts and powered carts.
+* Re-did the way commands work. /searchics is now /ic search, /listics is /ic list, /icdocs is /ic docs, /listmidis is /midi list, etc.
+* Commands that have pages now use -p flag. So /ic list -p 4
+* Fixed a few bugs with Player/Entity Sensor IC's
+* Removed experimental repeater support in favour of a much better working version of it.
+* Made the filesize taken up by CraftBook smaller.
+* CraftBook now won't generate unused files.
+
+3.4.1
++ Added a permission to restock mechanics.
+* Optimization to tonnes of IC's.
+* Cultivator will only till soil with air above them.
+* Fix issue with corrupted vehicles configuration.
+* Fix container dispenser error.
+* Fix sorter vehicle mech for 1.4.5+
++ Added the ability to disable certain IC's.
++ Added verification to a few IC's.
+* Last line of player sensor can now be blank.
+* Fixed a few million IC's not accepting sign parameters and using default instead.
++ Added new instruments and optimizations to MIDI Player IC.
++ Added a command to list midi files on the server. (/listmidis)
+* Fix wireless IC bugs.
+* Fix P-Door/Bridge.
+* Fix / 0 error.
+* Fixed circuit and mech reload commands causing errors.
+* Updated to latest PluginMetrics.
+* Fix BlockSensor.
+* Fix Elevator/Teleporter button support.
+* Melody IC won't stop playing when a player logs out.
+* Optimized the whole of CraftBook.
+* MIDI IC will keep playing a song for you if you reconnect. But new players joining won't hear it.
+
+3.4
+* Realistic snow mechanic now works much smoother and more realistically.
+* PLC's are now version independant. But will only work as of 1.4.5+.
++ Realistic snow freezes water underneath snow for a more realistic effect.
++ Added default parameters to, Fire Barrage; Fire Shooter and Flame Thrower IC's.
++ Added pipe support to Block Breaker and Combine Harvester.
+* Fixed error with chairs.
+* Allow the entity cannon to throw more than a single mob at a time.
+* Enhanced LanguageManager.
+* Player Detector replaced with Player Sensor.
+* Melody IC now checks if the file exists before playing.
+* Performance improvements.
+* Fixed a bug where pipes wouldn't work with diagonal setting turned off.
+
+3.4b2
+* Fixed backwards compatability.
++ Added a welcome message to teleporter IC's on the last line of the reciever.
+* Teleporters now put you on top of the teleport block.
+* Fixed NPE in Snow.
++ Chairs now require ProtocolLib to function.
+* Fixed reload commands.
+* Fixed Block Launcher.
+* Fixed Entity Trap.
+* Snow now works better.
+* Fix a chair error involving health.
+* Auto Crafter enhancements.
+* Fix Cultivator IC.
+* Fix combine harvester IC.
+* Fixed ROM IC's
+
+3.4b1
++ Added Pipes!
+ - Intergrate with IC's.
+   - Currently only auto crafter and sorter.
+ - Transfer items.
+ - Easy to use
+ - Compact
++ Added support for 1.4.5 new Cardinal Point system.
+* Fix Cultivator IC.
++ Added cocoa, sapling dead shrubs, lilly pads, vines, and giant mushroom support to Bonemeal Terraformer.
+* Fixed Day Sensor
+* Planter now works and uses a radius, instead of single block.
++ Add offset to liquid flooder.
++ Added data values to vehicle blocks.
+* Fix XPStorer.
++ Creature Spawner can set above Mob Spawners.
+* Fixed pig bugs with MC1200.
++ Add Irrigator IC's.
+* Fix ContainerDispenser dupe bug.
+* Fixed wierd snow placement.
+* Realism enhancements for realistic snow.
++ Added region support to PlayerDetector
+* Enhanced CartMessager.
++ Added 'stay' and 'despawn' flags to Advanced Entity Spawner to set if a mob can despawn.
++ Re-added chairs properly. They have been recoded to be awesome. (Require 1.4.5r0.3+)
++ Added chest support to planter IC.
+* Fix ItemDispenser
++ Added health regen to chairs.
++ Added ST Potion Inducer, and allowed it to work on mobs.
+* Optimized a few IC's and added more IC Docs.
+* Entity Trap IC can now hit more than 1 entity at a time.
+* Advanced Entity Spawner uses new API's. Armour setting only works 1.4.5r0.3+
+* Block Sensor Output fixed.
++ Added Combine Harvester IC's.
++ Added ST Container Dispenser IC.
++ Added Chest Stocker IC.
+* Optimized Vehicles.
+* Fixed CartTeleporter over long distances.
++ Added support for signs on the side of vehicle blocks.
+* Renamed Lift Up and Lift Down for vehicles to CartLift Up and CartLift Down.
++ Major changes to vehicle mechanics. They have proper perms and create messages.
+* Fixed Auto Crafter making the wrong items.
++ Add ST block setters.
+* Fix cooking pot deleting items.
++ Added button support to [Teleporter] signs.
++ Add Teleporter IC's
+* Fix elevator error on 1.4.5
+
+3.3.9r2
+* Fix errors and bugs with realistic snow
++ Added cultivator IC
+* Enhanced elevator filtering
++ Add cat types to entity spawner IC's
++ Realistic snow is now actually realistic
+* Fixed RandomBitST
+* Optimized and fixed Item Dispenser
+* Fixed Mechanisms not working due to vault dependency.
+
+3.3.9
+* Fixed an error involving chairs.
+* Fixed Pay signs.
+* Fix WorldGuard related error.
++ Added floor filtering to elevator mechanic.
++ Added realistic snow dispersion setting to snow.
+* Fixed XPStorer
++ Added craftbook.ic.MCXXXX nodes for ease of use.
++ Added searchics and listics refining.
+* Optimized most IC's!
+* Enhanced snow trampling!
+* Fixed LightSwitch & HiddenSwitch placing blocks when used.
+* Fixed Experimental Repeater Support not working on IC's
+
+3.3.8
+* XPStorer's block can be changed from the default via configuration.
++ Added chance support to custom drops
+* Slimmed down code. (Means slightly smaller .jar's)
+* Many optimizations and organisation of IC code.
+* Enhanced Spigot IC.
++ Added Sorter IC's
++ Added ItemFan IC's
+* Fixed Custom Drop errors.
+* Enhanced Auto Crafter
+* Fixed powering ST Clock not stopping it
++ Added per-player to wireless IC's (configurable)
+* Block breakers now work with pistons pushing blocks onto them.
+* Fixed Pulsar IC's and added documentation.
++ Added option to disable opening cooking pots on right click.
+* Fixed delayers not cancelling tasks when stopped.
+* Fixed Planter IC.
+* Toggle Area [SaveArea] signs save both id and inactiveID.
+* Fixed Container Collector data parsing.
+
+3.3.7
++ Added bucket-only option to Pump & Spigot IC's
+* Fixed errors with Snow mechanic.
++ Added /searchics command and added search support to /icdocs.
+* Fix IC Doc error for MC1227
+* Enhanced Command Sign Mechanic.
++ Fine tuned XP Storer & Removed dupe bug.
+* Made ItemDispenser IC spawn at top of block instead of in sign due to majority request.
++ Added appending support to Mob & Block custom drops. (Add a + to the end of the mob/block name/id)
+* Fix WG related errors.
+* Improved ItemDispenser support for names instead of IC's
+* Fix long-lasting incompatability with CommandBook
+* Major improvements for constant speed for minecarts.
+* Fix anyone can create elevator bug.
+* Fixed Metrics not working on Common
+* Fixed Door NPE's
+* Fixed Cooking Pot Bug
++ Re-added chairs.
++ Added option for cooking pots to be able to cook any furnace recipe.
+* Enhanced Dispenser Recipes
+
+3.3.6
++ Advanced Entity Spawner IC.
+* Many bug fixes.
++ Many random tweaks.
++ Entity Cannon IC.
++ Line stacking for Messager Vehicle Mechanic.
+* Improved NON-ST Bonemeal Terraformer
+* Vehicle mechancis can now be removes bys etting material to something below 0.
++ Added derailed velocity modifier to vehicles.
++ Added Stations to Minecart Mechanics (Sorter Mechanic) (/st command)
++ Added Minecart Lift.
+* Fixed XP-Storer Infinite XP Bug.
++ Added constant minecart speed setting.
+* Fixed Player Detection IC offset not working.
+* Item Dispenser can now use items from tekkit etc.
++ Added Carrots, Potatoes and Saplings to Bonemeal Terraformer.
+
+3.3.5
+* Neated code for configurations.
++ Added filter support to Block Breakers
++ Updated to 1.4.2
+* Enhanced AI Mechanics.
+* Improved XP Storer.
++ Added wooden button support to hidden switch.
++ Set block IC's now support names.
++ Added ability to shift right click IC's to get info on them
+- Removed useless config node from common config.
+* Fixed indirect-redstone issue with below blocks.
+* Fixed many IC's not working. (MC1017, MC1018, MC3XXX)
+
+3.3.4
++ Added API to add your own IC's.
+* Fixed Player Detection IC.
+* Fix many possible bugs.
++ Up and Down face support for hidden switch.
+* Fixed many redstone related bugs.
++ Allowed custom settings on max columns for gates.
+- Remove redstone torch support for IC's
+* MANY behind the scene fixes for IC's and other mechanics.
+
+3.3.3
+* Major changes to Config (Config needs to be regenerated!!!)
++ Data support for legacy cauldron. (Seperated with @)
++ Group support for legacy cauldron.
++ Added option for cooking pot to require fuel.
++ Added custom items for lightstone and ammeter
+* Snow placing works without snow mechanic enabled. (Just placing enabled)
++ Added max range option to teleporters. (Default is off)
++ Added option to require signs at teleport location
+* XPStorer improvements
+* Major Optimizations
++ Dispenser Recipe Additions and Improvements.
++ Skeleton AI Mechanic and improvements ai mechanics.
+* Fix CartDeposit
++ Config reload commands.
++ Added any-side support to hidden switch
++ added button on back support to lifts.
+* Fixed PlayerDetection IC.
+
+3.3.2:
+- Fixed MIDI IC tones and added velocity + guitar noise.
+- Pump IC. Pumps liquids into above chest.
+- Fix deposit/collect vehicle mechanic.
+- Fix Custom drops not replacing drops.
+- ICList Now shows permissions.
+- language config node added again, overrides default language
+- Per-IC Config. Doesn't contain much yet.
+- Improved Planter IC
+- Added Spigot IC. Opposite of pump. (Uses below chest)
+- Map Changer Mechanic.
+
+3.3.1:
+- Chest Collector renamed to Container Collector
+    - Can now collect into many containers.
+    - Containers intelligently place items into slots, fuels go into fuel slot etc.
+- All IC's have a shorthand.
+- Clock IC has been fixed.
+- Added Block Breaker IC's.
+- Added FlameThrower IC.
+- Added Liquid Flood IC.
+- Added Bonemeal terraformer IC.
+- Added Timed explosion IC.
+- Improved Combo Lock IC.
+- Added Plugin Metrics support.
+- IC's work on MC 1.2 and lower
+- Pumpkin/JackOLantern mechanic keeps direction.
+- Lift Looping.
+- Fixed documentation of IC's missing.
+- Massive reconstruction of MIDI IC.
+
+3.0 - 3.3: 
+- Unknown
+
 3.0alpha2:
 - New stuff was added. Not sure what...
 - ICs are implemented, but not all yet. Here's a summary of what is available:
